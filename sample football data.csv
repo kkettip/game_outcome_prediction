@@ -1,0 +1,27 @@
+,sbu_sport,playerId,metric,value,timestamp,Game Date,Opponent,Game Outcome
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,09/01/2022,RHODE ISLAND,L
+7252,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Propulsive Force(N),1020.5882,1711455161,09/17/2022,at Massachusetts,L
+7253,Football,1UemgD3fMVKV3DO9rBzk,Left Force at Peak Propulsive Force(N),1211,1711455161,09/24/2022,at Richmond,L
+7254,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Braking RFD(N/s),8192.6606,1711455161,10/01/2022,WILLIAM & MARY,L
+7255,Football,1UemgD3fMVKV3DO9rBzk,Right Force at Peak Propulsive Force(N),1368,1711455161,10/08/2022,at New Hampshire,L
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,10/15/2022,at Fordham,L
+7252,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Propulsive Force(N),1020.5882,1711455161,10/22/2022,MAINE,W
+7253,Football,1UemgD3fMVKV3DO9rBzk,Left Force at Peak Propulsive Force(N),1211,1711455161,10/29/2022,at University at Albany,L
+7254,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Braking RFD(N/s),8192.6606,1711455161,11/05/2022,MORGAN ST.,W
+7255,Football,1UemgD3fMVKV3DO9rBzk,Right Force at Peak Propulsive Force(N),1368,1711455161,11/12/2022,TOWSON,L
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,11/19/2022,at Monmouth,L
+7252,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Propulsive Force(N),1020.5882,1711455161,09/02/2021,NEW HAMPSHIRE,L
+7253,Football,1UemgD3fMVKV3DO9rBzk,Left Force at Peak Propulsive Force(N),1211,1711455161,09/11/2021,at Colgate,W
+7254,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Braking RFD(N/s),8192.6606,1711455161,09/18/2021,at Oregon,L
+7255,Football,1UemgD3fMVKV3DO9rBzk,Right Force at Peak Propulsive Force(N),1368,1711455161,09/25/2021,FORDHAM,L
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,10/02/2021,at Rhode Island,L
+7252,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Propulsive Force(N),1020.5882,1711455161,10/09/2021,at Towson,L
+7253,Football,1UemgD3fMVKV3DO9rBzk,Left Force at Peak Propulsive Force(N),1211,1711455161,10/16/2021,DELAWARE,W
+7254,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Braking RFD(N/s),8192.6606,1711455161,10/23/2021,RICHMOND,W
+7255,Football,1UemgD3fMVKV3DO9rBzk,Right Force at Peak Propulsive Force(N),1368,1711455161,11/06/2021,at Maine,W
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,11/13/2021,at Villanova,L
+7252,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Propulsive Force(N),1020.5882,1711455161,11/20/2021,ALBANY (NY),W
+7253,Football,1UemgD3fMVKV3DO9rBzk,Left Force at Peak Propulsive Force(N),1211,1711455161,03/06/2021,VILLANOVA,L
+7254,Football,1UemgD3fMVKV3DO9rBzk,Right Avg. Braking RFD(N/s),8192.6606,1711455161,3/13/2021,at DELAWARE,L
+7255,Football,1UemgD3fMVKV3DO9rBzk,Right Force at Peak Propulsive Force(N),1368,1711455161,03/20/2021,MAINE,L
+7251,Football,1UemgD3fMVKV3DO9rBzk,Left Avg. Braking Force(N),1079.0367,1711455161,3/27/2021,at UALBANY,W
