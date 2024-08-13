@@ -1,18 +1,20 @@
 # game_outcome_prediction
  
-Aim: 
+##Aim: 
 To predict SBU football game outcome using athletics’ physical metrics and past SBU football game outcome data
 
-Data information:
+##Data information:
 A csv file containing SBU football athletics’ physical movement metrics and game outcome 
+
 File name: AI_ML Project (For temp ML).csv
 
 Target variable: game outcome
 
 Columns: 'Metrics', 'Metric Value', 'Metric Date', 'SBUID', 'Game Date', 'Opponent', 'Game Outcome'
+
 Metrics: accel_load_accum, distance_total, metabolic_power_avg, speed_avg,  physio_load, physio_intensity, metabolic_work, accel_load_accum, distance_total, metabolic_power_avg
 
-Approach:
+##Approach:
 Used autoML from ML Jar to generate prediction model
 
 Used ML Jar’s Income Classification Example as a starting point to generate the game outcome prediction model 
@@ -20,7 +22,7 @@ Used ML Jar’s Income Classification Example as a starting point to generate th
 Link to example:
 https://github.com/mljar/mljar-examples/blob/master/Income_classification/Income_classification.ipynb
 
-Steps:
+##Steps:
 
 1. EDA:  Drop rows with NaN and duplicates. Also, convert Metric Dates and Game Date to the same date format.
 
@@ -28,10 +30,10 @@ Steps:
 
 Model 1:  All variables are used for the X value except for game outcome, while game outcome is used for the y value.
 
-# defining X and Y
-X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome
+##defining X and Y
+`X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome
 y = df["Game Outcome"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y`
 
 
 Model 2: Variables used for the x value does not include 'Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'
