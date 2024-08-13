@@ -26,7 +26,7 @@ https://github.com/mljar/mljar-examples/blob/master/Income_classification/Income
 
 1. EDA:  Drop rows with NaN and duplicates. Also, convert Metric Dates and Game Date to the same date format.
 
-2. Define X and Y using the following code:
+2. Define X and Y:
 
 ```
 Model 1:  All variables are used for the X value except for game outcome, while game outcome is used for the y value.
@@ -34,7 +34,6 @@ Model 1:  All variables are used for the X value except for game outcome, while 
 defining X and Y:
 X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome
 y = df["Game Outcome"]
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y
 
 ```
 
@@ -45,8 +44,6 @@ Model 2: Variables used for the x value does not include 'Game Outcome', 'SBUID'
 defining X and Y:
 X = df.drop(['Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'], axis=1)
 y = df['Game Outcome']
-Split the data into training and testing sets:
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 ```
 
@@ -69,7 +66,7 @@ After training the model 1, autoML suggested that the best model would be Defaul
 Model Evaluation:
 Accuracy is a ratio of correctly predicted observation to the total observations.
 
-Accuracy of 1, means that every prediction is correct.  This could be due to a small training data set used to train the model.  
+Accuracy of 1 means that every prediction is correct.  This could be due to a small training data set used to train the model.  
 
 
 ```
@@ -92,26 +89,29 @@ weighted avg       1.00      1.00      1.00        43
 Model 2:
 After training the model 2, autoML suggested that the best model would be Ensemble
 
-Accuracy of 0.74, which means that correct predictions are made 74% of the time.
+Accuracy of 0.67, which means that correct predictions are made 67% of the time.
 
 
 AutoML best model: Ensemble
-Accuracy: 0.74
+Accuracy: 0.67
 Classification Report:
               precision    recall  f1-score   support
 
-     SBU Win       0.74      0.97      0.84        30
-Opponent Win       0.75      0.23      0.35        13
+     SBU Win       0.66      1.00      0.79        27
+Opponent Win       1.00      0.12      0.22        16
 
-    accuracy                           0.74        43
-   macro avg       0.75      0.60      0.60        43
-weighted avg       0.75      0.74      0.69        43
+    accuracy                           0.67        43
+   macro avg       0.83      0.56      0.51        43
+weighted avg       0.79      0.67      0.58        43
+
 
 ```
 
 ## Future work:
 1. To better predict SBU football game outcomes, a larger data set should be used to train the model. The training data should also not be skewed towards losses or wins.  
 
-2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance, which would ensure that the most relevant data is collected for training the model.
+2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance. Once the metrics are determined, we can ensure that the most relevant data is collected for training the model.
 
 3. Predicting the number of points lost by the SBU football team when compared to their opponents per game. With this knowledge the football team can develop strategies to maximize the number of points gained per game.
+
+
