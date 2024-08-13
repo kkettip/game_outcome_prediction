@@ -60,14 +60,13 @@ y = df['Game Outcome']
 
 Different combinations of variables for X have an impact on the model’s performance. 
 
-Model 1:
+**Model 1:**
 After training the model 1, autoML suggested that the best model would be Default RandomForest.
 
 Model Evaluation:
 Accuracy is a ratio of correctly predicted observation to the total observations.
 
-Accuracy of 1 means that every prediction is correct.  This could be due to a small training data set used to train the model.  
-
+Accuracy of 1 means that every prediction is correct.  
 
 ```
 AutoML best model: 6_Default_RandomForest
@@ -85,7 +84,7 @@ weighted avg       1.00      1.00      1.00        43
 ```
 
 
-Model 2:
+**Model 2:**
 After training the model 2, autoML suggested that the best model would be Ensemble
 
 Accuracy of 0.67, which means that correct predictions are made 67% of the time.
@@ -109,8 +108,9 @@ weighted avg       0.79      0.67      0.58        43
 ## Future work:
 1. To better predict SBU football game outcomes, a larger data set should be used to train the model. The training data should also not be skewed towards losses or wins.  
 
-2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance. Once the metrics are determined, we can ensure that the most relevant data is collected for training the model.
+2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance. Once the metrics combination is determined, ensure that the most relevant data is collected for training the model.
 
 3. Predicting the number of points that would lead to a loss for the SBU football team when compared to their opponents per game. With this knowledge the football team can develop strategies to maximize the number of points gained per game.
+
 
 
