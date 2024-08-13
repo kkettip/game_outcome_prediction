@@ -112,6 +112,6 @@ weighted avg       0.79      0.67      0.58        43
 
 2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance. Once the metrics are determined, we can ensure that the most relevant data is collected for training the model.
 
-3. Predicting the number of points lost by the SBU football team when compared to their opponents per game. With this knowledge the football team can develop strategies to maximize the number of points gained per game.
+3. Predicting the number of points that would lead to a loss for the SBU football team when compared to their opponents per game. With this knowledge the football team can develop strategies to maximize the number of points gained per game.
 
 
