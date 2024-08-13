@@ -84,14 +84,13 @@ weighted avg       1.00      1.00      1.00        43
 
 ```
 
-```
 
 Model 2:
 After training the model 2, autoML suggested that the best model would be Ensemble
 
 Accuracy of 0.67, which means that correct predictions are made 67% of the time.
 
-
+```
 AutoML best model: Ensemble
 Accuracy: 0.67
 Classification Report:
