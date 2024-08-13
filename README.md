@@ -29,21 +29,17 @@ https://github.com/mljar/mljar-examples/blob/master/Income_classification/Income
 2. Define X and Y using the following code:
 
 ```
-{
 Model 1:  All variables are used for the X value except for game outcome, while game outcome is used for the y value.
 
 defining X and Y:
-`X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome`
+X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome
+y = df["Game Outcome"]
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y
 
-`y = df["Game Outcome"]`
-
-`X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y`
-}
 ```
 
 
 ```
-{
 Model 2: Variables used for the x value does not include 'Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'
 
 defining X and Y:
@@ -51,7 +47,7 @@ X = df.drop(['Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'], a
 y = df['Game Outcome']
 Split the data into training and testing sets:
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-}
+
 ```
 
 3. Split data into train and test sets.  
@@ -63,7 +59,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 6. Evaluate the model’s performance
 
 
-Findings: 
+## Findings: 
 
 Different combinations of variables for X have an impact on the model’s performance. 
 
@@ -76,6 +72,7 @@ Accuracy is a ratio of correctly predicted observation to the total observations
 Accuracy of 1, means that every prediction is correct.  This could be due to a small training data set used to train the model.  
 
 
+```
 AutoML best model: 6_Default_RandomForest
 Accuracy: 1.00
 Classification Report:
@@ -88,7 +85,9 @@ Opponent Win       1.00      1.00      1.00        11
    macro avg       1.00      1.00      1.00        43
 weighted avg       1.00      1.00      1.00        43
 
+```
 
+```
 
 Model 2:
 After training the model 2, autoML suggested that the best model would be Ensemble
@@ -108,9 +107,9 @@ Opponent Win       0.75      0.23      0.35        13
    macro avg       0.75      0.60      0.60        43
 weighted avg       0.75      0.74      0.69        43
 
+```
 
-
-Future work:
+## Future work:
 1. To better predict SBU football game outcomes, a larger data set should be used to train the model. The training data should also not be skewed towards losses or wins.  
 
 2. Determine which combination of athletics’ physical metrics would be best to include into the dataset for model training to predict game outcome. This could be accomplished by including different combinations of athletics’ physical metrics into the dataset and then evaluating the model’s performance, which would ensure that the most relevant data is collected for training the model.
