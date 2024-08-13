@@ -28,22 +28,31 @@ https://github.com/mljar/mljar-examples/blob/master/Income_classification/Income
 
 2. Define X and Y using the following code:
 
-> Model 1:  All variables are used for the X value except for game outcome, while game outcome is used for the y value.
+```
+{
+Model 1:  All variables are used for the X value except for game outcome, while game outcome is used for the y value.
 
-## defining X and Y
+defining X and Y:
 `X = df[df.columns[:-1]] # Include all columns except the last one that is game outcome`
+
 `y = df["Game Outcome"]`
+
 `X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2) # Split the dataframe df into X and y`
+}
+```
 
 
+```
+{
 Model 2: Variables used for the x value does not include 'Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'
 
-# defining X and Y
+defining X and Y:
 X = df.drop(['Game Outcome', 'SBUID', 'Game Date', 'Metric Date', 'Opponent'], axis=1)
 y = df['Game Outcome']
-# Split the data into training and testing sets
+Split the data into training and testing sets:
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
+}
+```
 
 3. Split data into train and test sets.  
 
